@@ -25,7 +25,7 @@ hidden = false
 
 [editor.indent-guides]
 render = true
-character = "╎"
+character = "│"
 
 [keys.normal]
 # TODO: there must be a builtin way to do this?
