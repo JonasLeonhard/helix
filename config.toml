@@ -3,7 +3,7 @@ theme = "catppuccin_mocha"
 [editor]
 line-number = "relative"
 mouse = true
-cursorline = true 
+cursorline = true
 bufferline = "multiple"
 
 [editor.cursor-shape]
@@ -31,12 +31,40 @@ character = "│"
 [keys.normal]
 # TODO: there must be a builtin way to do this?
 # for moving selected lines up/down
-C-j = ['ensure_selections_forward', 'extend_to_line_bounds', 'extend_char_right', 'extend_char_left', 'delete_selection', 'add_newline_below', 'move_line_down', 'replace_with_yanked']
-C-k = ['ensure_selections_forward', 'extend_to_line_bounds', 'extend_char_right', 'extend_char_left', 'delete_selection', 'move_line_up', 'add_newline_above', 'move_line_up', 'replace_with_yanked']
+C-j = [
+  'ensure_selections_forward',
+  'extend_to_line_bounds',
+  'extend_char_right',
+  'extend_char_left',
+  'delete_selection',
+  'add_newline_below',
+  'move_line_down',
+  'replace_with_yanked',
+]
+C-k = [
+  'ensure_selections_forward',
+  'extend_to_line_bounds',
+  'extend_char_right',
+  'extend_char_left',
+  'delete_selection',
+  'move_line_up',
+  'add_newline_above',
+  'move_line_up',
+  'replace_with_yanked',
+]
 
 # Nvim binds
-D = ["extend_to_line_end", "yank_main_selection_to_clipboard", "delete_selection"]
-C = ["extend_to_line_end", "yank_main_selection_to_clipboard", "delete_selection", "insert_mode"]
+D = [
+  "extend_to_line_end",
+  "yank_main_selection_to_clipboard",
+  "delete_selection",
+]
+C = [
+  "extend_to_line_end",
+  "yank_main_selection_to_clipboard",
+  "delete_selection",
+  "insert_mode",
+]
 G = "goto_file_end"
 V = ["select_mode", "extend_to_line_bounds"]
 
@@ -46,13 +74,15 @@ _ = "goto_line_start"
 "$" = "goto_line_end"
 
 # Clipboards 
-p = ["paste_clipboard_after", "collapse_selection"]
-P = ["paste_clipboard_before", "collapse_selection"]
-Y = ["extend_to_line_end", "yank_main_selection_to_clipboard", "collapse_selection"]
 d = ["yank_main_selection_to_clipboard", "delete_selection"]
 x = ["yank_main_selection_to_clipboard", "delete_selection"]
-y = ["yank_main_selection_to_clipboard", "normal_mode", "flip_selections", "collapse_selection"]
-Y = ["extend_to_line_bounds", "yank_main_selection_to_clipboard", "goto_line_start", "collapse_selection", "normal_mode"]
+Y = [
+  "extend_to_line_bounds",
+  "yank_main_selection_to_clipboard",
+  "goto_line_start",
+  "collapse_selection",
+  "normal_mode",
+]
 p = "replace_selections_with_clipboard" # No life without this
 P = "paste_clipboard_before"
 
@@ -63,8 +93,30 @@ esc = ["collapse_selection", "keep_primary_selection", "normal_mode"]
 esc = ["collapse_selection", "normal_mode"]
 
 [keys.normal.y]
-y = ["extend_to_line_bounds", "yank_main_selection_to_clipboard", "normal_mode", "collapse_selection"]
-w = ["move_next_word_start", "yank_main_selection_to_clipboard", "collapse_selection", "normal_mode"]
-W = ["move_next_long_word_start", "yank_main_selection_to_clipboard", "collapse_selection", "normal_mode"]
-g = { g = ["select_mode", "extend_to_line_bounds", "goto_file_start", "extend_to_line_bounds", "yank_main_selection_to_clipboard", "collapse_selection", "normal_mode"] }
-
+y = [
+  "extend_to_line_bounds",
+  "yank_main_selection_to_clipboard",
+  "normal_mode",
+  "collapse_selection",
+]
+w = [
+  "move_next_word_start",
+  "yank_main_selection_to_clipboard",
+  "collapse_selection",
+  "normal_mode",
+]
+W = [
+  "move_next_long_word_start",
+  "yank_main_selection_to_clipboard",
+  "collapse_selection",
+  "normal_mode",
+]
+g = { g = [
+  "select_mode",
+  "extend_to_line_bounds",
+  "goto_file_start",
+  "extend_to_line_bounds",
+  "yank_main_selection_to_clipboard",
+  "collapse_selection",
+  "normal_mode",
+] }

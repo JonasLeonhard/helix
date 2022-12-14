@@ -19,3 +19,10 @@ vue:
 rust:
 	rustup component add rust-analyzer
 	sudo ln -s $(rustup which rust-analyzer) /usr/local/bin/rust-analyzer
+lldb-vscode:
+	mkdir bin && cd bin
+	sudo curl -L https://github.com/vadimcn/vscode-lldb/releases/download/v1.8.1/codelldb-aarch64-darwin.vsix -o "codelldb.zip"
+	unzip "codelldb.zip" "extension/adapter/*" "extension/lldb/*"
+	mv extension/ bin/codelldb_adapter
+	sudo rm "codelldb.zip"
+	sudo ln -s bin/codelldb_adapter/adapter/codelldb /usr/local/bin/lldb-vscode
