@@ -16,3 +16,6 @@ toml:
 	cargo install taplo-cli --locked --features lsp
 vue:
 	npm install -g vls
+rust:
+	rustup component add rust-analyzer
+	sudo ln -s $(rustup which rust-analyzer) /usr/local/bin/rust-analyzer
