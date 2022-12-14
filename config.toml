@@ -31,6 +31,8 @@ character = "│"
 [keys.normal]
 # TODO: there must be a builtin way to do this?
 # for moving selected lines up/down
+K = 'hover'
+
 C-j = [
   'ensure_selections_forward',
   'extend_to_line_bounds',
