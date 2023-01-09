@@ -124,3 +124,7 @@ g = { g = [
   "collapse_selection",
   "normal_mode",
 ] }
+
+[keys.select]
+_ = "goto_line_start"
+"$" = "goto_line_end"
