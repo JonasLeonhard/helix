@@ -9,7 +9,7 @@ bufferline = "multiple"
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
-select = "underline"
+select = "block"
 
 [editor.statusline]
 left = ["mode", "separator", "spinner", "file-name"]
@@ -69,6 +69,8 @@ C = [
 ]
 G = "goto_file_end"
 V = ["select_mode", "extend_to_line_bounds"]
+v = ["collapse_selection", "select_mode"]
+C-v = ["select_mode"]
 
 "{" = ["goto_prev_paragraph", "collapse_selection"]
 "}" = ["goto_next_paragraph", "collapse_selection"]
