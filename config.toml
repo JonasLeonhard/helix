@@ -1,4 +1,5 @@
 theme = "catppuccin_mocha"
+icons = "nerdfonts" # https://github.com/helix-editor/helix/pull/2869 # [build-01]
 
 [editor]
 line-number = "relative"
@@ -122,3 +123,16 @@ g = { g = [
   "collapse_selection",
   "normal_mode",
 ] }
+
+# ---------------------------------------------
+# ------------ ONLY FOR TEST_BUILD ------------
+# ---------------------------------------------
+# https://github.com/helix-editor/helix/pull/2869 [build-01]
+[editor.icons]
+bufferline = true
+picker = true
+statusline = true
+
+#https://github.com/helix-editor/helix/pull/5768 [build-01]
+[editor.explorer]
+position = "right"
