@@ -29,6 +29,10 @@ hidden = false
 render = true
 character = "│"
 
+# -------------------------------------------
+# ------------ KEY-BINDINGS -----------------
+# -------------------------------------------
+
 [keys.normal]
 # TODO: there must be a builtin way to do this?
 # for moving selected lines up/down
